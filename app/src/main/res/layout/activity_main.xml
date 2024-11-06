@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <!-- Botón Alarma -->
+    <ImageButton
+        android:id="@+id/button_alarma"
+        android:layout_width="110dp"
+        android:layout_height="98dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_alarma"
+        android:padding="0.5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/alarma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <!-- Botón Llamada -->
+    <ImageButton
+        android:id="@+id/button_llamada"
+        android:layout_width="110dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_llamada"
+        android:padding="0.5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/llamada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_alarma"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <!-- Botón URL -->
+    <ImageButton
+        android:id="@+id/button_url"
+        android:layout_width="110dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_url"
+        android:padding="0.5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/url"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <!-- Botón Correo -->
+    <ImageButton
+        android:id="@+id/button_correo"
+        android:layout_width="110dp"
+        android:layout_height="98dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_correo"
+        android:padding="0.5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/correo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <!-- Imagen Central -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="388dp"
+        android:src="@drawable/eduardo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        app:srcCompat="@drawable/eduardo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

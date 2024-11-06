@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ActividadEvaluable1</string>
+    <string name="boton_alarma">Alarma</string>
+    <string name="boton_llamada">Llamada</string>
+    <string name="boton_url">URL</string>
+    <string name="boton_correo">Correo</string>
+    <string name="foto_personalizada">FotoPerfil</string>
+    <string name="boton_llamada2">BotonLlamada</string>
+    <string name="boton_volver">boton_volver</string>
+
+
+</resources>

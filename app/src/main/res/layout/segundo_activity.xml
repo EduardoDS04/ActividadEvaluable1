@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <!-- Texto que indica al usuario que ingrese el número de teléfono -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese el número para realizar la llamada"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <!-- Campo de texto para que el usuario ingrese el número de teléfono -->
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="305dp"
+        android:layout_height="65dp"
+        android:hint="Número de teléfono"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/button_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Botón para realizar la llamada -->
+    <ImageButton
+        android:id="@+id/button_call"
+        android:layout_width="152dp"
+        android:layout_height="161dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_llamada2"
+        android:scaleType="centerInside"
+        android:src="@drawable/call_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <!-- Botón para volver a la pantalla anterior -->
+    <ImageButton
+        android:id="@+id/boton_volver"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:contentDescription="@string/boton_volver"
+        android:padding="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_phone"
+        app:layout_constraintVertical_bias="0.866" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
