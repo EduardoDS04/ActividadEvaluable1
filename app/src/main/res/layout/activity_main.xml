@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
     <!-- Botón Alarma -->
+
     <ImageButton
         android:id="@+id/button_alarma"
         android:layout_width="110dp"
@@ -21,10 +22,13 @@
         android:src="@drawable/alarma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+        app:layout_constraintVertical_bias="0.562" />
+
+
+
 
     <!-- Botón Llamada -->
     <ImageButton
@@ -39,11 +43,10 @@
         android:src="@drawable/llamada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_alarma"
-        app:layout_constraintVertical_bias="0.416" />
-
+        app:layout_constraintVertical_bias="0.171" />
     <!-- Botón URL -->
     <ImageButton
         android:id="@+id/button_url"
@@ -57,11 +60,10 @@
         android:src="@drawable/url"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
-
+        app:layout_constraintVertical_bias="0.741" />
     <!-- Botón Correo -->
     <ImageButton
         android:id="@+id/button_correo"
@@ -74,23 +76,63 @@
         android:src="@drawable/correo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
+        app:layout_constraintVertical_bias="0.562" />
     <!-- Imagen Central -->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="390dp"
-        android:layout_height="388dp"
+        android:layout_width="370dp"
+        android:layout_height="325dp"
         android:src="@drawable/eduardo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119"
+        app:layout_constraintVertical_bias="0.039"
         app:srcCompat="@drawable/eduardo" />
+
+    <ImageButton
+        android:id="@+id/button_dados"
+        android:layout_width="116dp"
+        android:layout_height="113dp"
+        android:contentDescription="Juego de Dados"
+        android:src="@drawable/dados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <ImageButton
+        android:id="@+id/button_chistes"
+        android:layout_width="117dp"
+        android:layout_height="103dp"
+        android:contentDescription="Chistes"
+        android:src="@drawable/chistes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/button_config"
+        android:layout_width="221dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Configuración"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

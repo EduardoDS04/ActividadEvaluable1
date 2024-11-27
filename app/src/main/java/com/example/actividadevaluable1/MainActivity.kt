@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.AlarmClock
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -31,6 +32,28 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // DadosActivity
+        val buttonDados = findViewById<ImageButton>(R.id.button_dados)
+        buttonDados.setOnClickListener {
+            val intent = Intent(this, DadosActivity::class.java)
+            startActivity(intent)
+        }
+
+        // ChistesActivity
+        val buttonChistes = findViewById<ImageButton>(R.id.button_chistes)
+        buttonChistes.setOnClickListener {
+            val intent = Intent(this, ChistesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonConfig = findViewById<Button>(R.id.button_config)
+        buttonConfig.setOnClickListener {
+            val intent = Intent(this, ConfigActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         // Configuración del botón para realizar una llamada
         val buttonLlamada = findViewById<ImageButton>(R.id.button_llamada)
@@ -127,4 +150,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
+
 }

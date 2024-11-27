@@ -7,6 +7,11 @@
     <string name="foto_personalizada">FotoPerfil</string>
     <string name="boton_llamada2">BotonLlamada</string>
     <string name="boton_volver">boton_volver</string>
-
+    <string-array name="tiempos_opciones">
+        <item>1 segundo</item>
+        <item>2 segundos</item>
+        <item>3 segundos</item>
+    </string-array>
 
 </resources>
+

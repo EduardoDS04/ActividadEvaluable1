@@ -29,6 +29,11 @@
         <activity
             android:name=".SegundoActivity"
             android:exported="true" />
+
+        <activity android:name=".DadosActivity" android:exported="true" />
+        <activity android:name=".ChistesActivity" android:exported="true" />
+        <activity android:name=".ConfigActivity" android:exported="true" />
+
     </application>
 
 </manifest>
